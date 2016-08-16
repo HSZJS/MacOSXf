@@ -20,9 +20,11 @@
 {
     
 //    self.view.layer.backgroundColor = [NSColor cyanColor].CGColor;
-      NSColor * color = [NSColor redColor];
-      self.view.backgroundFilters = @[color];
-      self.view.layer.backgroundColor = [NSColor redColor].CGColor;
+//      NSColor * color = [NSColor redColor];
+//      self.view.backgroundFilters = @[color];
+    
+    [self.view setWantsLayer:YES];
+    self.view.layer.backgroundColor = [NSColor cyanColor].CGColor;
     
     
     
